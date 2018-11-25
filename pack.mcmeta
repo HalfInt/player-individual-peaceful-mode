@@ -1,0 +1,6 @@
+{
+   "pack":{
+      "pack_format":3,
+      "description":"Removes monsters coming to close to a player taged as 'PeacefulPlayer'. Monsters taged 'PeacefulPersisted' are exempt."
+   }
+}
