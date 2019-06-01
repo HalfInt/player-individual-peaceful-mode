@@ -1,4 +1,4 @@
-# function to be called in a loop.
+# function to be called every tick.
 # removes all monsters close to a peaceful-player that have not been explicitly marked for persistence.
 #
 # called by: player_individual_peaceful_mode:tick
@@ -29,6 +29,12 @@ execute at @a[tag=PeacefulPlayer] run tag @e[type=minecraft:witch,distance=..24,
 execute at @a[tag=PeacefulPlayer] run tag @e[type=minecraft:zombie,distance=..24,tag=!PeacefulPersisted] add r
 execute at @a[tag=PeacefulPlayer] run tag @e[type=minecraft:zombie_pigman,distance=..24,tag=!PeacefulPersisted] add r
 execute at @a[tag=PeacefulPlayer] run tag @e[type=minecraft:zombie_villager,distance=..24,tag=!PeacefulPersisted] add r
+
+execute at @a[tag=PeacefulPlayer] run tag @e[type=minecraft:evoker,distance=..24,tag=!PeacefulPersisted] add r
+execute at @a[tag=PeacefulPlayer] run tag @e[type=minecraft:pillager,distance=..24,tag=!PeacefulPersisted] add r
+execute at @a[tag=PeacefulPlayer] run tag @e[type=minecraft:ravager,distance=..24,tag=!PeacefulPersisted] add r
+execute at @a[tag=PeacefulPlayer] run tag @e[type=minecraft:vex,distance=..24,tag=!PeacefulPersisted] add r
+execute at @a[tag=PeacefulPlayer] run tag @e[type=minecraft:vindicator,distance=..24,tag=!PeacefulPersisted] add r
 
 # of those, decide if they can vanish (i.e. don't have anything picked up) -> v
 # TODO can this be improved? maybe test for being nametaged, hand and armor items and CanPickUpLoot, or item drop chances?

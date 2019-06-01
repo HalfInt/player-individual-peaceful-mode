@@ -11,7 +11,7 @@ This datapack allows players to play on a non-peaceful world or server, while no
 
 ### Intend
 - Allows players (e.g. younger children) not (yet) up for the challenge of fighting or evading monsters to play with others preferring higher difficulty.
-- In contrast to the build-in peaceful mode, the players still get the experience of having to deal with the food and health-regeneration system and can eat at all.
+- In contrast to the build-in peaceful mode, players still get the experience of having to deal with the food and health-regeneration system and can eat at all.
 - In contrast to setting players to creative mode (which makes monsters ignore them), they still get the experience of dealing with resource management.
 
 ### Drawbacks / Shortcomings:
