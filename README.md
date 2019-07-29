@@ -1,7 +1,7 @@
 # player-individual-peaceful-mode
 A Minecraft datapack that allows players to play on a non-peaceful world or server, while **not having to deal with monsters** and still **being able to eat**.
 
-Version 1.0.0
+Version 1.1.0
 Created by HalfInt <carnivoruscabbage@gmail.com>.
 
 If you have suggestions or encountered any bugs, please create an issue on [GitHub](https://github.com/HalfInt/player-individual-peaceful-mode/issues) or contact me by email.
@@ -25,3 +25,7 @@ This datapack allows players to play on a non-peaceful world or server, while no
 ## Version History
 1.0.0 for Minecraft 1.13.2
 - first functional and tested version
+
+1.1.0 for Minecraft 1.14.4
+- added Illager monsters (Evoker, Pillager, Ravenger, Vex, Vindicator), as they now appear outside of Woodland Mansions.
+- tested for minecraft 1.14.4
