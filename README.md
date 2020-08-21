@@ -1,7 +1,6 @@
 # player-individual-peaceful-mode
 A Minecraft datapack that allows players to play on a non-peaceful world or server, while **not having to deal with monsters** and still **being able to eat**.
 
-Version 1.1.0
 Created by HalfInt <carnivoruscabbage@gmail.com>.
 
 If you have suggestions or encountered any bugs, please create an issue on [GitHub](https://github.com/HalfInt/player-individual-peaceful-mode/issues) or contact me by email.

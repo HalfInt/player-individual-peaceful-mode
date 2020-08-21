@@ -27,7 +27,7 @@ execute at @a[tag=PeacefulPlayer] run tag @e[type=minecraft:spider,distance=..24
 execute at @a[tag=PeacefulPlayer] run tag @e[type=minecraft:stray,distance=..24,tag=!PeacefulPersisted] add r
 execute at @a[tag=PeacefulPlayer] run tag @e[type=minecraft:witch,distance=..24,tag=!PeacefulPersisted] add r
 execute at @a[tag=PeacefulPlayer] run tag @e[type=minecraft:zombie,distance=..24,tag=!PeacefulPersisted] add r
-execute at @a[tag=PeacefulPlayer] run tag @e[type=minecraft:zombie_pigman,distance=..24,tag=!PeacefulPersisted] add r
+execute at @a[tag=PeacefulPlayer] run tag @e[type=minecraft:zombified_piglin,distance=..24,tag=!PeacefulPersisted] add r
 execute at @a[tag=PeacefulPlayer] run tag @e[type=minecraft:zombie_villager,distance=..24,tag=!PeacefulPersisted] add r
 
 execute at @a[tag=PeacefulPlayer] run tag @e[type=minecraft:evoker,distance=..24,tag=!PeacefulPersisted] add r
