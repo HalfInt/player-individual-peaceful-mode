@@ -21,6 +21,14 @@ This datapack allows players to play on a non-peaceful world or server, while no
 - Currently, only monsters normally present in the Overworld are covered by this datapack. Players in Individual Peaceful Mode are supposed to neither go to the Nether (unless it has been prepared to be safe), nor to the End while the Enderdragon is around.
 - The rare, nonrenewable Elder Guardian is exempt and will stay around. As it is easy to avoid, players in Individual Peaceful Mode are expected to not go near them.
 
+## Installation & Usage
+
+To use this datapack, copy the folder `Player Individual Peaceful Mode` into the `datapacks` folder of your world.
+
+From the server console or as an Op in game, use the command `tag <IGN> add PeacefulPlayer` to set a player into Individual Peaceful Mode. Use `tag <IGN> remove PeacefulPlayer` to set them back to normal.
+The tag `PeacefulPersisted` set for a monster exempts it from being removed.
+
+
 ## Version History
 1.0.0 for Minecraft 1.13.2
 - first functional and tested version
