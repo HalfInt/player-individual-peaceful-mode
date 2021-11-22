@@ -12,33 +12,12 @@
 #   v: monster that may additionally vanish (i.e. has not picked up items)
 
 # find monsters that have to be removed (i.e. close to players) -> tag r
-execute at @a[tag=PeacefulPlayer] run tag @e[type=minecraft:cave_spider,distance=..24,tag=!PeacefulPersisted] add r
-execute at @a[tag=PeacefulPlayer] run tag @e[type=minecraft:creeper,distance=..24,tag=!PeacefulPersisted] add r
-execute at @a[tag=PeacefulPlayer] run tag @e[type=minecraft:drowned,distance=..24,tag=!PeacefulPersisted] add r
-execute at @a[tag=PeacefulPlayer] run tag @e[type=minecraft:enderman,distance=..24,tag=!PeacefulPersisted] add r
-execute at @a[tag=PeacefulPlayer] run tag @e[type=minecraft:endermite,distance=..24,tag=!PeacefulPersisted] add r
-execute at @a[tag=PeacefulPlayer] run tag @e[type=minecraft:guardian,distance=..24,tag=!PeacefulPersisted] add r
-execute at @a[tag=PeacefulPlayer] run tag @e[type=minecraft:husk,distance=..24,tag=!PeacefulPersisted] add r
-execute at @a[tag=PeacefulPlayer] run tag @e[type=minecraft:phantom,distance=..24,tag=!PeacefulPersisted] add r
-execute at @a[tag=PeacefulPlayer] run tag @e[type=minecraft:silverfish,distance=..24,tag=!PeacefulPersisted] add r
-execute at @a[tag=PeacefulPlayer] run tag @e[type=minecraft:skeleton,distance=..24,tag=!PeacefulPersisted] add r
-execute at @a[tag=PeacefulPlayer] run tag @e[type=minecraft:slime,distance=..24,tag=!PeacefulPersisted] add r
-execute at @a[tag=PeacefulPlayer] run tag @e[type=minecraft:spider,distance=..24,tag=!PeacefulPersisted] add r
-execute at @a[tag=PeacefulPlayer] run tag @e[type=minecraft:stray,distance=..24,tag=!PeacefulPersisted] add r
-execute at @a[tag=PeacefulPlayer] run tag @e[type=minecraft:witch,distance=..24,tag=!PeacefulPersisted] add r
-execute at @a[tag=PeacefulPlayer] run tag @e[type=minecraft:zombie,distance=..24,tag=!PeacefulPersisted] add r
-execute at @a[tag=PeacefulPlayer] run tag @e[type=minecraft:zombified_piglin,distance=..24,tag=!PeacefulPersisted] add r
-execute at @a[tag=PeacefulPlayer] run tag @e[type=minecraft:zombie_villager,distance=..24,tag=!PeacefulPersisted] add r
-
-execute at @a[tag=PeacefulPlayer] run tag @e[type=minecraft:evoker,distance=..24,tag=!PeacefulPersisted] add r
-execute at @a[tag=PeacefulPlayer] run tag @e[type=minecraft:pillager,distance=..24,tag=!PeacefulPersisted] add r
-execute at @a[tag=PeacefulPlayer] run tag @e[type=minecraft:ravager,distance=..24,tag=!PeacefulPersisted] add r
-execute at @a[tag=PeacefulPlayer] run tag @e[type=minecraft:vex,distance=..24,tag=!PeacefulPersisted] add r
-execute at @a[tag=PeacefulPlayer] run tag @e[type=minecraft:vindicator,distance=..24,tag=!PeacefulPersisted] add r
+execute at @a[tag=PeacefulPlayer] run tag @e[type=#player_individual_peaceful_mode:monsters,distance=..24,tag=!PeacefulPersisted] add r
 
 # of those, decide if they can vanish (i.e. don't have anything picked up) -> v
 # TODO can this be improved? maybe test for being nametaged, hand and armor items and CanPickUpLoot, or item drop chances?
 tag @e[tag=r,nbt={PersistenceRequired:0b}] add v
+
 # make them invisible and, if they can vanish, take away their stuff (so we don't see that either) and tp them into the void
 effect give @e[tag=r] minecraft:invisibility 2 0 true
 execute as @e[tag=v] run data merge entity @s {HandItems:[{},{}],ArmorItems:[{},{},{},{}],CanPickUpLoot:0b}
